@@ -38,7 +38,7 @@ nav a {
     color: white;
 }
 
-nav a:hover, nav a:active  {
+nav a:hover, nav a:active {
     text-decoration: none;
 }
 
@@ -66,7 +66,6 @@ nav img {
 }
 
 @media(min-width:768px) {
-
     #mobMenuIcon {
         display: none;
     }
@@ -76,20 +75,22 @@ nav img {
     }
 }
 
-@media(max-width:768px){
-  nav{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .inner_links {
-    order: 3
-  }
-  .inner_links li{
-    text-align: left;
-    display: block;
-  }
+@media(max-width:768px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .inner_links {
+        order: 3
+    }
+    .inner_links li {
+        text-align: left;
+        display: block;
+    }
 }
+
+
 /*Head Section*/
 
 .main_head {
