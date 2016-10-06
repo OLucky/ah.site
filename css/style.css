@@ -1,0 +1,152 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*General Classes*/
+
+.container {
+    padding: 15px 0 20px 0;
+    width: 100%;
+    max-height: 100%;
+    height: auto;
+}
+
+.icon {
+    height: 20%;
+    width: auto;
+}
+
+
+/*Navigation*/
+
+nav {
+    padding-top: 5px;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    background-color: rgba(191, 78, 63, 0.82);
+    z-index: 100;
+}
+
+nav div {
+    display: inline;
+}
+
+nav a {
+    color: white;
+}
+
+nav a:hover, nav a:active  {
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.inner_links li {
+    padding: 5px 0 5px 0;
+}
+
+nav img {
+    max-height: 30px;
+    width: auto;
+    cursor: pointer;
+}
+
+#mobMenuIcon {
+    display: inline;
+}
+
+@media(min-width:768px) {
+
+    #mobMenuIcon {
+        display: none;
+    }
+    .inner_links {
+        display: inline;
+        margin-top: 10px;
+    }
+}
+
+@media(max-width:768px){
+  nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .inner_links {
+    order: 3
+  }
+  .inner_links li{
+    text-align: left;
+    display: block;
+  }
+}
+/*Head Section*/
+
+.main_head {
+    width: 100%;
+    height: auto;
+}
+
+
+/*Video Section*/
+
+.video_cont {
+    background-image: url('img/backgrounds/bg_video.jpg');
+    color: white;
+}
+
+
+/*Features Section*/
+
+.features_cont {
+    background-image: url('img/backgrounds/bg_features.jpg');
+    color: white;
+    width: 100%;
+}
+
+.feature {
+    text-align: center;
+}
+
+
+/*Slider Section*/
+
+.slider_cont {
+    background-image: url('img/backgrounds/bg_video.jpg');
+    text-align: center;
+}
+
+.slider_cont img {
+    width: 80%;
+}
+
+
+/*Footer Section*/
+
+.footer_cont {
+    background-image: url('img/backgrounds/bg_features.jpg');
+    color: white;
+    text-align: center;
+}
+
+.footer_cont h2 {
+    font-size: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer_text {
+    font-size: 10px;
+    margin-top: 30px;
+}
