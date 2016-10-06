@@ -1,10 +1,21 @@
+@font-face {
+  font-family: "Alien League Bold";
+  src: url('fonts/alienleaguebold.ttf');
+}
+@font-face {
+  font-family: "Andale Mono";
+  src: url('fonts/ufonts.com_andale-mono.ttf');
+}
+@font-face {
+  font-family: "Helvetica CE";
+  src: url('fonts/Helvetica_CE_Bold.ttf');
+}
+
 body {
     display: flex;
     flex-direction: column;
     font-family: "Andale Mono";
 }
-
-
 /*General Classes*/
 
 .container {
@@ -103,6 +114,7 @@ nav img {
 /*Video Section*/
 
 .video_cont {
+    text-align: center;
     margin-top: -1px;
     background-image: url('img/backgrounds/bg_video.jpg');
     color: white;
@@ -112,10 +124,12 @@ nav img {
 /*Features Section*/
 
 .features_cont h2{
+  margin-top: 5px;
   font-family: "Alien League Bold";
 }
 
 .features_cont {
+    padding: 40px 0 40px 0;
     background-image: url('img/backgrounds/bg_features.jpg');
     color: white;
     width: 100%;
@@ -125,6 +139,9 @@ nav img {
     text-align: center;
 }
 
+.feature p{
+  margin-top: 20px;
+}
 
 /*Slider Section*/
 
