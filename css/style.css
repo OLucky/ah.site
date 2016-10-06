@@ -1,6 +1,7 @@
 body {
     display: flex;
     flex-direction: column;
+    font-family: "Andale Mono";
 }
 
 
@@ -102,12 +103,17 @@ nav img {
 /*Video Section*/
 
 .video_cont {
+    margin-top: -1px;
     background-image: url('img/backgrounds/bg_video.jpg');
     color: white;
 }
 
 
 /*Features Section*/
+
+.features_cont h2{
+  font-family: "Alien League Bold";
+}
 
 .features_cont {
     background-image: url('img/backgrounds/bg_features.jpg');
@@ -128,7 +134,7 @@ nav img {
 }
 
 .slider_cont img {
-    width: 80%;
+    width: 100%;
 }
 
 
@@ -141,6 +147,7 @@ nav img {
 }
 
 .footer_cont h2 {
+    font-family: "Helvetica CE";
     font-size: 90px;
     display: flex;
     flex-direction: column;
