@@ -15,6 +15,7 @@ body {
     display: flex;
     flex-direction: column;
     font-family: "Andale Mono";
+    font-size: 16px;
 }
 /*General Classes*/
 
@@ -153,11 +154,6 @@ nav img {
     background-image: url('img/backgrounds/bg_video.jpg');
     text-align: center;
 }
-
-.slider_cont img {
-    width: 100%;
-}
-
 
 /*Footer Section*/
 
