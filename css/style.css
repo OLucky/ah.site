@@ -21,6 +21,7 @@ body {
 .container {
     padding: 15px 0 20px 0;
     width: 100%;
+    max-height: 200%;
     height: auto;
 }
 
@@ -129,12 +130,7 @@ nav img {
     padding: 40px 0 40px 0;
     background-image: url('img/backgrounds/bg_features.jpg');
     color: white;
-}
-
-@media (max-width: 768px){
-  .features_cont{
-    height: 100%;
-  }
+    height: auto;
 }
 
 .features_cont h2{
