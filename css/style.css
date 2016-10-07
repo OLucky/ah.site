@@ -119,11 +119,12 @@ nav img {
     background-image: url('img/backgrounds/bg_video.jpg');
     color: white;
 }
-
-.videoWrapper {
-}
-.videoWrapper iframe {
-}
+@media(max-width:768px){
+ iframe {
+   width:100%;
+   height: auto;
+ }
+ }
 /*Features Section*/
 
 .features_cont h2{
