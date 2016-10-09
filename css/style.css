@@ -47,7 +47,7 @@ nav a {
     color: white;
 }
 
-nav a:visited, nav a:hover, nav a:active{
+nav a:focus, nav a:hover, nav a:active{
     text-decoration: none;
     color: #FBA628;
 }
