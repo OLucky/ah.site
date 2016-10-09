@@ -35,24 +35,21 @@ body {
 /*Navigation*/
 
 nav {
-    padding-top: 5px;
-    text-align: center;
+    height: auto;
     width: 100%;
     position: fixed;
-    background-color: rgba(191, 78, 63, 0.82);
+    background-color: rgba(41, 163, 201, 0.86);
+    display: flex;
     z-index: 100;
-}
-
-nav div {
-    display: inline;
 }
 
 nav a {
     color: white;
 }
 
-nav a:hover, nav a:link{
+nav a:visited, nav a:focus, nav a:hover, nav a:active{
     text-decoration: none;
+    color: #FBA628;
 }
 
 nav ul {
@@ -61,41 +58,66 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin-right: 10px;
 }
 
-.inner_links li {
-    padding: 5px 0 5px 0;
+.social_links{
+  text-align: right;
+  padding-right: 40px;
+  flex-basis:50%;
+  cursor: pointer;
+  margin-top: 10px;
+  width: auto;
 }
 
-nav img {
+.social_links img {
     max-height: 30px;
     width: auto;
-    cursor: pointer;
+    margin-right: auto;
+}
+
+#logo{
+  display: inline;
+  width: auto;
+  max-height: 50px;
+  height: auto;
 }
 
 #mobMenuIcon {
     display: inline;
+    max-height: 100%;
+    height: auto;
+    cursor: pointer;
 }
 
 @media(min-width:768px) {
     #mobMenuIcon {
         display: none;
     }
-    .inner_links {
-        display: inline;
-        margin-top: 10px;
+    .inner_links{
+      flex-basis:50%;
+      display: inline;
+      height: 25px;
+      margin-top: 15px;
+    }
+    nav ul li {
+        margin-left: 50px;
     }
 }
 
 @media(max-width:768px) {
     nav {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .social_links{
+      display: flex;
+      justify-content: space-around;
     }
     .inner_links {
-        order: 3
+        order: 3;
+        flex: 0 1 100%;
     }
     .inner_links li {
         text-align: left;
